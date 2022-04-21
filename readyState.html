@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<p>Geçerli belgenin yükleme durumunu görüntülemek için butona tıklayın.</p>
+	<button onclick="myFunction()">Dene</button>
+	<p id="demo"></p>
+	<script>
+		function myFunction() {
+			var x = document.readyState;
+			document.getElementById("demo").innerHTML = x;
+		}
+	</script>
+</body>
+</html>

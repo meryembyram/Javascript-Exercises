@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+	<script type="text/javascript">
+		var init = function() {
+			var pList1 = document.getElementByClassName("ctx");
+			isaretle (pList1,'gray');
+			var pList2 = document.getElementByClassName("p1 p2");
+			isaretle (pList2,'khaki');
+		}
+		var isaretle = function (pListRef, color){
+			for(var i = 0; i < pListRef.length; i++){
+				var element = pListRef.item(i);
+				element.style.backgroundColor = color;
+			}
+		}
+	</script>
+</head>
+<body onload="init();">
+	<div>
+		<p class="2d">Context2DRendering</p>
+		<p class="3d ctx">Context3DRendering</p>
+		<p class="webg1">WEBGL<span class="ctx">Uygulamaları</span></p>
+		<p class="p1 p2">Class özelliğin p1 p2 sırasıyla seçicileri atanmış.</p>
+		<p class="p2 p1">class özelliğine p2 p1 sırasıyla seçicileri atanmış.</p>
+		<p class="p1">class özelliğine p1 seçicisi atanmış.</p>
+	</div>
+</body>
+</html>

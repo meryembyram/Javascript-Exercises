@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head id="myHead">
+   <meta charset="utf-8">
+   <title>JavaScript</title>
+   <link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<p>Belgedeki baş elemanının kimliği görüntülemek için butona tıklayın.</p>
+	<button onclick="myFunction()">Dene</button>
+	<p id="demo"></p>
+	<script>
+		function myFunction() {
+			var x = document.head.id;
+			document.getElementById("demo").innerHTML = x;
+		}
+	</script>
+</body>
+</html>

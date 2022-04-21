@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+	<script type="text/javascript">
+		var init = function(){
+			var div1 = document.querySelector('#html5');
+			var span = document.querySelector('#html5>span');
+			var div2 = document.querySelector('#html5+div');
+			var p = document.querySelector('div#content p');
+			var denek = document.querySelector('p>span');
+			div1.style.backgroundColor = "#ffb300";
+			span.style.backgroundColor = "#00cc00";
+			div2.style.backgroundColor = "#cd0074";
+			p.style.backgroundColor = "#ff4900";
+			denek.style.color = "#fff";
+		} 
+	</script>
+</head>
+<body onload = "init();">
+	<div id="content">
+		<div id = "html5">Java<span>Script</span></div>
+		<div>asp.NET</div>
+		<p>java<span>script</span></p>
+	</div>
+</body>
+</html>

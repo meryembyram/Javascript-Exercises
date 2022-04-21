@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+	<script type="text/javascript">
+		var init = function (){
+			var elDiv = document.querySelector('#div1,.p1');
+			var elP = document.querySelector('.p2,.p3');
+			alert(elDiv.id+"\n" + elP.className);
+		}  
+	</script>
+</head>
+<body onload="init ();">
+	<div id="div1">
+		<p>Her Yönüyle HTML5</p>
+		<p class = "p1">DOM LEVEL 2</p>
+		<p class = "p3">DOM LEVEL 3</p>
+	</div>
+</body>
+</html>

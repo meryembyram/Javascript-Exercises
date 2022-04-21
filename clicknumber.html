@@ -1,0 +1,24 @@
+<html>
+ <head>
+ 	<meta charset="utf-8">
+    <title>Javascript</title>
+    <link rel ="shortcut icon" href="js.png">
+</head>
+<body bgcolor="#999">
+	<p id="deneme" onclick="fonk()"> 
+	<big><big><big><b>Sayılar için tıkla!</b></big></big></big>
+	</p>
+	<script type="text/javascript">
+	var y = 0;
+	function fonk() {
+		var x = document.getElementById("deneme");
+		x.innerHTML="<h1>"+y+ "</h1>";
+		if(y%2==0)
+		x.style.border="solid 3px #f00";
+		else
+		x.style.border="solid 3px #00f";
+		y = y + 1;
+	}
+	</script>
+</body>
+</html>

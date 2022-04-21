@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+	</head>
+<body>
+   <button onclick="myFunction()"> Harfler </button>
+   <button onclick="myTers()"> Ters Cevir </button>
+   <p id="ters"></p>
+	<script>
+		var dizi=["e","r","t","y","u","o"];
+		document.getElementById("ters").innerHTML ="Dizinin normal siralamasi :" + dizi;
+		function myFunction(){
+			var dizi=["e","r","t","y","u","o"];
+			document.getElementById("ters").innerHTML ="Dizinin normal siralamasi :" + dizi;
+		}
+		function myTers(){
+			var cevir=["e","r","t","y","u","o"].reverse();
+			document.getElementById("ters").innerHTML = "Dizinin cevirilmis hali :" + cevir;
+		}
+	</script>
+</body>
+</html>
+
+
+

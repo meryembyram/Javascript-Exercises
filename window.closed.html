@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<script type="text/javascript">
+		function closed(){
+			if(yeni_pencere.closed==true){
+				document.getElementById("yaz").innerHTML="pencere kapandı";
+			}
+			else{
+				document.getElementById("yaz").innerHTML="pencere açıldı";
+			}
+		}
+		function open_page(){
+			yeni_pencere=window.open("","_blank","width=300, height=100");
+			yeni_pencere=document.write("açılan pencere");
+		}
+		function close_page(){
+			yeni_pencere.close();
+		}
+	</script>
+	<div style="background-color:#CCC; width:200px; height:25px" id="yaz"></div>
+	<input type="button" value="pencereyi aç" onclick="open_page()"/>
+	<br>
+	<input type="button" value="pencereyi kapat" onclick="close_page()"/>
+	<br>
+	<input type="button" value="closed özelliği" onclick="closed()"/>
+</body>
+</html>

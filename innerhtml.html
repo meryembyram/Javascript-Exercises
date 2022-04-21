@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<ul id="myList">
+		<li> Kahve </li>
+		<li> Çay </li>
+	</ul>
+	<p>Butona tıklandığında ul etiketinin elemanları demo id'li p etiketinin içine yazılacak...</p>
+	<button onclick="myFunction()">Tıkla</button>
+	<p id="demo"></p>
+	<script>
+	    function myFunction() {
+			var x= document.getElementById("myList").innerHTML;
+			document.getElementById("demo").innerHTML = x;
+	    }
+	</script>
+</body>
+</html>

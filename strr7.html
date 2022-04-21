@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>JavaScript</title>
+   <link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<script type="text/javascript">
+		var str="JavaScript JavaScript";
+		document.write(str.lastIndexOf("ript"));
+		function lastIndexOf(metin,aranan,konum) {
+			var sonKonum = aranan.length - 1 ;
+			if (konum < sonKonum) {
+				return -1;
+			}
+			var ilkKonum = (konum == undefined)? metin.length -1 :konum;
+			var geciciMetin;
+			for (var i=ilkKonum;i>=sonKonum;i--) {
+				geciciMetin =" ";
+				for (var j=i;j>i-aranan.length;i--) {
+					geciciMetin = metin[j]+geciciMetin;
+				}
+				if (aranan == geciciMetin) {
+					return j+1;
+				}
+			}
+			return -1;
+		}
+	</script> 
+</body>
+</html>

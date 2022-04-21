@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+	<style type="text/css">
+		#res{
+			width: 200px;
+			height: 30px;
+			padding: 10px;
+			border: 1px gray solid;
+			background-color: #eeeaea;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function btn(event){
+			var sonuc;
+			switch (event.button){
+				case 0:
+					sonuc = "Sol tuş basıldı";
+				break;
+				case 1:
+					sonuc = "Orta tuş basıldı";
+				break;
+				case 2:
+					sonuc = "Sağ tuş basıldı";
+				break;
+			}
+			event.target.innerHTML = sonuc;
+		}
+	</script>
+	<div id="res" onmousedown="btn(event)"></div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">	
+</head>
+<body>
+	<h1 class="example"></h1>
+	<p class="example"></p>
+	<h2 class= "example"></h2>
+	<p class="example"></p>
+	<p><strong>Note:</strong>The querySelectorAll () methodu Internet Explorer 8 ve daha önceki versiyonunu deskteklemez.</p>
+	<script>
+		function myFunction() {
+			const nodeList = document.querySelectorAll(".example");
+			for ( var i = 0; i < nodeList.length; i++) {
+				nodeList[0].style.background-color = "red";
+				nodeList[1].style.background-color = "pink";
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+	<script type="text/javascript">
+		function init(){
+			var div = document.getElementById("c1");
+			div.onclick = function (event){
+				document.write(event.target);
+			}
+		}
+		function anim(event){
+			document.write(event.target);
+		}
+	</script>
+</head>
+<body onload="init();">
+	<div id="c1">Tıkla 1!</div>
+	<div id="c2" onclick="anim(event);">Tıkla 2!</div>
+</body>
+</html>

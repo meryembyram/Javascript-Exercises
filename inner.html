@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>diziler pop</title>
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+var dizi = [1,2,"a",'b',true,1.5];
+var x = document.getElementById("demo");
+
+var t= "pop() methodu işletilemeden önce <br>";
+t =  t + dizi;
+var sil = dizi.pop();
+t = t + "<br>pop() methodu işletildikten sonra<br>";
+t = t + dizi;
+t =  t + "<br> diziden silinen değer : " + sil;
+x.innerHTML= t;
+
+</script>
+</body>
+</html>

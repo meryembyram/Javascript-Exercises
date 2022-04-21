@@ -1,0 +1,22 @@
+<html>
+   <head>      
+      <script type="text/javascript">
+         function WriteCookie()
+         {
+            if( document.myform.customer.value == "" ){
+               alert("Deger Girin!");
+               return;
+            }
+            cookievalue= escape(document.myform.customer.value) + ";";
+            document.cookie="isim: " + cookievalue;
+            document.write ("Cerez ayarlama : " + "isim: " + cookievalue );
+         }
+      </script>      
+   </head>   
+   <body>   
+      <form name="myform" action="">
+         Isim Girin: <input type="text" name="customer"/>
+         <input type="button" value="Set Cookie" onclick="WriteCookie();"/>
+      </form>   
+   </body>
+</html>

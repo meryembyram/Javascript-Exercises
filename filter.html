@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>JavaScript</title>
+   <link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<script type="text/javascript">
+		var dizi = [1,2,3,4,5,6,7,8,9,10];
+		document.write("dizinin içindeki elemanlar<br>");
+		document.write(dizi + "<br>");
+		var tek_dizi = dizi.filter(tek);
+		document.write("dizideki tek sayıların oluşturduğu yeni dizi<br>");
+		document.write(tek_dizi + "<br>");
+		var cift_dizi = dizi.filter(cift)
+		document.write("dizideki çift sayıların oluşturduğu yeni dizi<br>");
+		document.write(cift_dizi + "<br>");
+		function tek(element,index,array){
+			return element %2 !==0
+		}
+		function cift(element,index,array){
+			return element %2 ===0
+		}
+	</script>
+</body>
+</html>

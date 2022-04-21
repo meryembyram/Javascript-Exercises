@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+  <meta charset="utf-8">
+  <link rel ="shortcut icon" href="js.png"> 
+</head>
+<body>
+
+<script type="text/javascript">
+	function goster(){
+		yeni_pencere = window.open("","_blank","width=500px, height=300px");
+		yeni_pencere.document.write('<img src="resim.jpg" width="500", height="300">');
+	}
+	function goster1(){
+		yeni_pencere = window.open("","_blank","width=500px, height=300px");
+		yeni_pencere.document.write('<img src="res1.jpg" width="500", height="300">');
+	}
+	function goster2(){
+		yeni_pencere = window.open("","_blank","width=500px, height=300px");
+		yeni_pencere.document.write('<img src="res2.jpg" width="500", height="300">');
+	}
+</script>
+  <div id="goster"><a href="javascript:;" onclick="goster()"><img src="resim.jpg" width="100px" height="100px"></a></div>
+  <div id="goster1"><a href="javascript:;" onclick="goster1()"><img src="res1.jpg" width="100px" height="100px"></a></div>
+  <div id="goster2"><a href="javascript:;" onclick="goster2()"><img src="res2.jpg" width="100px" height="100px"></a></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+  <meta charset="utf-8">
+  <link rel ="shortcut icon" href="js.png">
+
+  <style type="text/css">
+  body{
+  	padding-left: 50px;
+    margin: 30px;
+  	font-size: 20px;
+  }
+  #res{
+  	width: 300px;
+  	height: 50px;
+  	padding-left: 30px;
+  	border: 1px gray solid;
+  	background-color: #eeeaea;
+  }
+  </style>
+</head>
+<body>
+  <script type="text/javascript">
+  function coords(events){
+  	var x = event.clientX;
+  	var y = event.clientY;
+  	event.target.innerHTML = "clientX: " + x + "<br>" + "clientY: " + y;
+  }
+  </script>
+  <div id="res" onmousemove="coords(event)"></div>
+</body>
+</html>

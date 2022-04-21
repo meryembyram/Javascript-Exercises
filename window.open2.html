@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<script type="text/javascript">
+		function open_page(){
+			var str = "location=no, menubar=no, toolbar=no, status=no, resizable=no, width=300, height=100";
+			window.open("js.html", "_blank", str);
+			var yeni_sayfa = window.open("","",str);
+			yeni_sayfa.document.write("bu sayfa yeni oluşturuldu");
+		}
+	</script>
+	<a href="javascript:;" onclick="open_page()">Sayfayı Aç</a>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<script type="text/javascript">
+		var str = "JavaScript EcmaScript";
+		var dIfade = new RegExp ("ri" , "g");
+		document.write("lastIndex özelliğinin başlangıç değeri: " + dIfade.lastIndex + "<br>");
+		while (dIfade.test(str)) {
+			document.write("lastIndex: " + dIfade.lastIndex + "<br>");
+		}
+	</script>
+</body>
+</html>

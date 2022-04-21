@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+  <meta charset="utf-8">
+  <link rel ="shortcut icon" href="js.png"> 
+</head>
+<body>
+	<script type="text/javascript">
+		var myWindow;
+		function openWin(){
+			myWindow=window.open("","myWindow","width=400,height=200");
+			myWindow.document.write("<p>bu benim pencerem</p>");
+		}
+		function moveWindow(){
+			myWindow.moveTo(500,100);
+		}
+	</script>
+	<p>Pencere aç ve ekranda soldan yeni pencereyi oynat</p>
+	<button onclick="openWin()">Pencere Aç</button>
+	<button onclick="moveWin()">Pencere Oynat</button>
+</body>
+</html>

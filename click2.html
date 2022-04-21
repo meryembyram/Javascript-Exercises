@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+  <meta charset="utf-8">
+  <link rel ="shortcut icon" href="js.png">
+
+  <style type="text/css">
+	div#tk{
+	    width: 300px;
+	    height: 200px;
+	    padding: 10px;
+	    border: 1px solid crimson;
+	  }
+  </style>
+
+  <script type="text/javascript">
+  var elDiv;
+  function init(){
+  	elDiv = document.getElementById("tk");
+  	elDiv.addEventListener("mousedown",run);
+  }
+  function run(event){
+  	if(event.button == 2){
+  		elDiv.removeEventListener("mousedown",run);
+  		return;
+  	}
+    event.target.style.backgroundColor = "rgb("+Math.round(Math.random()*255)+"," + Math.round(Math.random()*255)+","+Math.round(Math.random()*255)+")";
+  }
+  </script>
+</head>
+<body onload="init();">
+  <div id="tk">Tıklanacak alan!</div>
+</body>
+</html>

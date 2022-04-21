@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<script type="text/javascript">
+		var num,average,sum=0.0,i,n;
+		n = Number(prompt("Girilecek Sayı Adetini Giriniz:"));
+		for (i=1;i<=n;++i){
+			num=Number(prompt("Sayı Giriniz:"));
+			if(num<0.0)
+			break;
+			sum=sum+num;
+		}
+		average=sum/(i-1);
+		document.write("Averaj = " + average);
+    </script>
+</body>
+</html>

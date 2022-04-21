@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <title>Javascript</title>
+  <meta charset="utf-8">
+  <link rel ="shortcut icon" href="js.png">
+  <script type="text/javascript">
+  function myFunction(){
+  	var para = document.createElement("p");
+  	var t = document.createTextNode("Bu bir paragraftır..");
+  	para.appendChild(t);
+  	document.body.appendChild(para);
+  }
+  </script>
+</head>
+<body>
+	<p>Butona basılınca p elemanıyla biraz yazı oluşturulacak</p>
+	<button onclick="myFunction()">Dene</button>
+</body>
+</html>

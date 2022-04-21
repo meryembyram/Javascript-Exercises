@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>JavaScript</title>
+   <link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<p id="demo">Click the button to display the value of the first button element in this XHTML document</p>
+	<button onclick="myFunction()">Try it</button>
+	<script>
+		function myFunction(){
+			var x=document.getElementsByTagNameNS("http://www.w3.org/1999/xhtml","button");
+			var btntxt=x[0].childNodes[0].nodeValue;
+			document.getElementById("demo").innerHTML=btntxt;
+		}
+	</script>
+	<p><strong>Note:</strong> Internet explorer 8 and earlier does not support the getElementsByTagNameNS method.</p>
+</body>
+</html>

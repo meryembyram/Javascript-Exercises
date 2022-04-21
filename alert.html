@@ -1,0 +1,20 @@
+<html> 
+<head>
+	<meta charset="utf-8">
+	<title>Onay Kutusu</title> 
+	<script language="JavaScript"> 
+		function bomba() 
+		{ 
+		var onay 
+		onay = confirm("Mars gezegenine doğrulttuğunuz nükleer bombalar hazır. Gezegeni yok etmek için onay verin.") 
+		if (onay == true) document.write("Koskoca gezegeni yok ettin de eline ne geçti?") 
+		else document.write("Yok etme operasyonu iptal edildi, tüm Marslılar size teşekkür ediyor.") 
+		} 
+	</script> 
+</head> 
+<body>
+	<form>Nükleer bombaları ateşlemek için düğmeye basınız.<br> 
+		<input type="button" onclick="bomba()" value="ATEŞ ET!"> 
+	</form> 
+</body> 
+</html>

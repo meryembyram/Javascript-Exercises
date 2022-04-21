@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<script type="text/javascript">
+		var x=prompt("inç'den cm için 1'e, cm'den inç çin 2'e basınız:");
+		if(x==1){
+			var y= 2.54;
+			var t=prompt("lütfen inç değerini giriniz:");
+			document.write("girdiğiniz değerin cm değeri"+y*t);
+		}
+		else if(x==2){
+			var y=2.54;
+			var t=prompt("lütfen cm değerini giriniz:");
+			document.write("girdiğiniz değerin inç değeri"+t/y);
+		}
+		else
+		document.write("lütfen 1 ya da 2 giriniz...");
+	</script>
+</body>
+</html>

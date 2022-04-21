@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>JavaScript</title>
+   <link rel ="shortcut icon" href="js.png">
+	<style>
+		body {
+			background-color: yellow; 
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<p>Click the button to display the style properties of this document.</p>
+	<button onclick="myFunction()">Try it</button>
+	<p id="demo"></p>
+	<script>
+		function myFunction() {
+			var x = document.getElementsByTagName("STYLE")[0];
+			document.getElementById("demo").innerHTML = x.innerHTML;
+		}
+	</script>
+</body>
+</html>

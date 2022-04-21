@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>JavaScript</title>
+   <link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<form>
+		Ad: <input type="text" name="fname" value="Donald"><br><br>
+		Soyad: <input type="text" name="lname" value="Duck">
+	</form>
+	<p>Belgedeki form elemanlarının sayısını görüntülemek için butona tıklayın.</p>
+	<button onclick="myFunction()">Dene</button>
+	<p id="demo"></p>
+	<script>
+		function myFunction() {
+			var x = document.forms.length;
+			document.getElementById("demo").innerHTML = x;
+		}
+	</script>
+</body>
+</html>

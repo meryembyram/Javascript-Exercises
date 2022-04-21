@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>JavaScript</title>
+   <link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<p>Try navigating the links below by using the "Tab" button on you keyboard before and after you click the "Change TabIndex" button.</p>
+	<p><a id="myAnchor1" href="http://www.w3schools.com">Link 1</a></p>
+	<p><a id="myAnchor2" href="http://www.facebook.com">Link 2</a></p>
+	<p><a id="myAnchor3" href="http://www.twitter.com">Link 3</a></p>
+	<input type="button" onclick="myFunction()" value="Change TabIndex">
+	<script>
+		function myFunction() {
+			document.getElementById("myAnchor1").tabIndex = "3";
+			document.getElementById("myAnchor2").tabIndex = "2";
+			document.getElementById("myAnchor3").tabIndex = "1";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+    <script type="text/javascript">
+        function GetListItems () {
+            var list = document.getElementById ("myList");
+
+            if ('previousElementSibling' in list) {
+                var child = list.lastElementChild;
+                while (child) {
+                    alert (child.innerHTML);
+                    child = child.previousElementSibling;
+                }
+            }
+            else {
+                var child = list.lastChild;
+                while (child) {
+                    if (child.nodeType == 1 /*Node.ELEMENT_NODE*/) {
+                        alert (child.innerHTML);
+                    }
+                    child = child.previousSibling;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <ol id="myList">
+        <li>Apple</li>
+        <li>Peach</li>
+        <li>Cherry</li>
+    </ol>
+    <button onclick="GetListItems ();">Get the list items backwards!</button>
+</body>
+</html>

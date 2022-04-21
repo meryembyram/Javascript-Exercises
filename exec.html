@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<script type="text/javascript">
+	   var str = "JavaScript ECMASCRIPT";
+	   var dIfade = /ri/;
+	   //bu satırda lastIndex = 0dır.
+	   document.write(dIfade.exec(str));
+	   document.write("<br>");
+	   //sonuc:["ri"], lastIndex=8
+	   //eğer bir daha exec() methodunu işletirsem bu method
+	   //aramaya 8.indeks numaralı karakterden başlayacak
+	   document.write(dIfade.exec(str));
+	   document.write("<br>");
+	   //sonuc:["RI"], lastIndex=19
+	   //eğer bir daha exec() methodunu işletirsem bu method
+	   //aramaya 19.indeks numaralı karakterden başlayacak
+	   document.write(dIfade.exec(str));
+	   document.write("<br>");
+	   //sonuc:null, lastIndex=0
+	   //değerini döndürdü ve lastIndex özelliğini 0 değerine çekti
+	   //Bu durumda; eğer bir daha exe()methodunu işletirsem
+	   //bu method aramaya 0.indeks numaralı karakterden başlayacaktır
+	</script>
+</body>
+</html>

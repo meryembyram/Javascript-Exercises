@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body onclick="myFunction()">
+
+<p>Aktif elemanı görüntülemek için belgede herhangi bir yere tıklayın.</p>
+<input type="text" value="Giriş Alanı">
+<button>Buton</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.activeElement.tagName;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+</body>
+</html>

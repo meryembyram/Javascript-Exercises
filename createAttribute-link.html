@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>Javascript</title>
+  <meta charset="utf-8">
+  <link rel ="shortcut icon" href="js.png"> 
+</head>
+<body>
+	<a id="myAnchor">Bir Link: www.w3schools.com a gider..</a>
+	<p>Butona tıklandığında a elemanına href ekleneek ve tıklandığında w3schools sitesine gidecektir.</p>
+	<button onclick="myFunction()">Dene</button>
+	<script>
+	    function myFunction(){
+		  	var anchor = document.getElementById("myAnchor");
+		  	var att = document.createAttribute("href");
+		  	att.value = "http://www.w3schools.com";
+		  	anchor.setAttributeNode(att);
+	  	}
+  </script>
+</body>
+</html>

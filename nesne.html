@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>Javascript</title>
+  <meta charset="utf-8">
+  <link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+  	<script type="text/javascript">
+		function A(x,y){
+			this.x=x;
+			this.y=y;
+			this.carp=function(){
+				return this.x * this.y;
+			}
+		}
+		var o1 = new A(10,20);
+		document.write(o1.carp());
+    </script>
+</body>
+</html>

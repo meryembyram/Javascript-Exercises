@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<script type="text/javascript">
+		function GetOptionById () {
+			var selectTag = document.getElementById ("fruit");
+            var optionTag = selectTag.namedItem ("peach");
+            alert ("The option with 'peach' ID is " + optionTag.text);
+        }
+	</script>
+    <select id="fruit">
+        <option id="apple">Apple</option>
+        <option id="peach">Peach</option>
+		<option id="pear">Pear</option>
+    </select>
+    <button onclick="GetOptionById ()">Get an option by ID</button>
+</body>
+</html>

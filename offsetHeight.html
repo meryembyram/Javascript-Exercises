@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+	<style type="text/css">
+		div{
+			width: 200px;
+			border: 1px solid gray;
+			height: 100px;
+			padding: 2px;
+			margin: 1px;
+			overflow: scroll;
+		}
+	</style>
+	<script type="text/javascript">
+		function start(){
+			document.querySelector("p").innerHTML = "offsetHeight : "+ document.querySelector("div").offsetHeight + "<br>" + "offsetWidth : "+document.querySelector("div").offsetWidth;
+		}
+	</script>
+</head>
+<body onload="start();">
+	<div>Kapsayıcı elemana göre bir elemanın yükseldiğini elde etmek için kullanılı. Bu özellik sadece okunabilirdir.</div>
+	<p></p>
+</body>
+</html>

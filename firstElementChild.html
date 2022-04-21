@@ -1,0 +1,36 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<link rel ="shortcut icon" href="js.png">
+    <script type="text/javascript">
+        function GetListItems () {
+            var list = document.getElementById ("myList");
+            if ('firstElementChild' in list) {
+                var child = list.firstElementChild;
+                while (child) {
+                    alert (child.innerHTML);
+                    child = child.nextElementSibling;
+                }
+            }
+            else {
+                var child = list.firstChild;
+                while (child) {
+                    if (child.nodeType == 1 /*Node.ELEMENT_NODE*/) {
+                        alert (child.innerHTML);
+                    }
+                    child = child.nextSibling;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <ol id="myList">
+        <li>Apple</li>
+        <li>Peach</li>
+        <li>Cherry</li>
+    </ol>
+    <button onclick="GetListItems ();">Get the list items!</button>
+</body>
+</html>

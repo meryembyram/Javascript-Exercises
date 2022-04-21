@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body id="oldBodyElement">
+<script>
+	alert(document.body.id); // "oldBodyElement"
+
+	var aNewBodyElement = document.createElement("body");
+
+	aNewBodyElement.id = "newBodyElement";
+	document.body = aNewBodyElement;
+	alert(document.body.id); // "newBodyElement"
+</script>
+</body>
+</html>

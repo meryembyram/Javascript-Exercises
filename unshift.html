@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<button onclick="myFunction()"> Diziler </button>
+	<button onclick="myUzunluk()"> Uzunluk</button>
+	<p id="demo"></p>
+	<script>
+		var dizi=["1", "2", "a", "b", true, 1.5];
+		document.getElementById("demo").innerHTML= dizi;
+		function myFunction(){
+			dizi.unshift("10", "20", "30", "40");
+			document.getElementById("demo").innerHTML = dizi;
+		}
+		function myUzunluk(){
+			var uzunluk=dizi.unshift();
+			document.getElementById("demo").innerHTML = "Dizinin yeni uzunlugu:" + uzunluk;
+		}
+	</script>
+</body>
+</html>

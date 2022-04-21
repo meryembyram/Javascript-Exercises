@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<div id="div-01">Here is div-01</div>
+	<div id="div-02">Here is div-02</div>
+	<li>This is a list item</li>
+	<li>This is another list item</li>
+	<div id="div-03">Here is div-03</div>
+	<script>
+		var el = document.getElementById('div-03').previousElementSibling;
+		document.write('<p>Siblings of div-03</p><ol>');
+		while (el) {
+			document.write('<li>' + el.nodeName + '</li>');
+			el = el.previousElementSibling;
+		}
+		document.write('</ol>');
+	</script>
+</body>
+</html>

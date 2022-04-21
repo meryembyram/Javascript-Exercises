@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>Javascript</title>
+  <meta charset="utf-8">
+  <link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+  	<script type="text/javascript">
+		document.write(slice("Javascript DOM", 6,10));
+		function slice(metin,baslangic,bitis){
+			bitis=(bitis==undefined) ? metin.length : bitis;
+			if(baslangic>metin.length-1||bitis>metin.length||baslangic>bitis){
+				return " ";
+			}
+			var str="";
+			for(var i=baslangic;i<bitis;i++){
+				str+=metin[i];
+			}
+			return str;
+		}
+    </script>
+</body>
+</html>

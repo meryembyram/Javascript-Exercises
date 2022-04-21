@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<img src="resim.jpg" alt="sarı kedi" width="140" height="100">
+	<img src="res1.jpg" alt="tekir kedi" width="152" height="128">
+	<img src="res2.jpg" alt="siyah kedi" width="70" height="50">
+	<p>Belgedeki görüntü sayısını görüntülemek için butona tıklayın.</p>
+	<button onclick="myFunction()">Dene</button>
+	<p id="demo"></p>
+	<script>
+		function myFunction() {
+			var x = document.images.length;
+			document.getElementById("demo").innerHTML = x;
+		}
+	</script>
+</body>
+</html>

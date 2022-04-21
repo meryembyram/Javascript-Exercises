@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<script type="text/javascript">
+		var x = prompt("Sayıyı yazınız...");
+		var bir = x%10;
+		var iki = ((x - bir)%100)/10;
+		var uc =  (((x - bir) - iki*10)%1000)/100;
+		var t;
+		switch(bir){
+			case 1:
+				t = "bir";
+			break;
+			case 2:
+				t = "iki";
+			break;
+			case 3:
+				t = "uc";
+			break;
+			case 4:
+				t = "dort";
+			break;
+			case 5:
+				t = "bes";
+			break;
+			case 6:
+				t = "alti";
+			break;
+			case 7:
+				t = "yedi";
+			break;
+			case 8:
+				t = "sekiz";
+			break;
+			case 9:
+				t = "dokuz";
+			break;
+			default:
+			t = "";
+		}
+		switch(iki){
+			case 1:
+				t = "on " + t;
+			break;
+			case 2:
+				t = "yirmi "+ t;
+			break;
+			case 3:
+				t = "otuz "+ t;
+			break;
+			case 4:
+				t = "kirk "+ t;
+			break;
+			case 5:
+				t = "elli "+ t;
+			break;
+			case 6:
+				t = "altmis "+ t;
+			break;
+			case 7:
+				t = "yetmis "+ t;
+			break;
+			case 8:
+				t = "seksen "+ t;
+			break;
+			case 9:
+				t = "doksan "+ t;
+			break;
+			default:
+			t = "";
+		}
+		switch(uc){
+			case 1:
+				t =  "yuz " + t;
+			break;
+			case 2:
+				t = "iki yuz "+ t;
+			break;
+			case 3:
+				t = "uc yuz "+ t;
+			break;
+			case 4:
+				t = "dort yuz "+ t;
+			break;
+			case 5:
+				t = "bes yuz "+ t;
+			break;
+			case 6:
+				t = "alti yuz "+ t;
+			break;
+			case 7:
+				t = "yedi yuz "+ t;
+			break;
+			case 8:
+				t = "sekiz yuz "+ t;
+			break;
+			case 9:
+				t = "dokuz yuz "+ t;
+			break;
+			default:
+			t = "";
+		}
+		document.write(t);
+	</script>
+</body>
+</html>

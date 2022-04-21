@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+  	<p id="demo"></p>
+  	<script type="text/javascript">
+		var str= "Javascript Javascript";
+		document.write(indexOf(str, "ript"));//sonuç:6
+		function indexOf(metin, aranan, konum){
+			var sonKonum = metin.lenght - aranan.lenght;
+			if(konum > sonKonum) {
+				return -1;
+			}
+			var ilkKonum = (konum == undefined) ? 0 : konum;
+			var geciciMetin;
+			for(var i = ilkKonum; i<=sonKonum; i++){
+				geciciMetin = "";
+				for(var j = i; j<(i+aranan.lenght); j++) {
+					geciciMetin += metin[j];
+				}
+				if (aranan == geciciMetin) {
+					return i;
+				}
+			}
+			return-1;
+		}
+    </script>
+</body>
+</html>

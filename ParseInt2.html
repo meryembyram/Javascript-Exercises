@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+  	<script type="text/javascript">
+  	var sayilar=[["0xC",16],["C",16],["14",8],["012",10],["12",10],[12.88,101],["1100",2],["12*3",10],["12e+2",10],["12px",10],["12"]];
+  	for (var i=0; i<sayilar.length;i++){
+  		var param1=sayilar[i][0];
+  		var param2=sayilar[i][1];
+  		document.write("parseInt("+param1+","+param2+")="+parseInt(param1,param2)+ "<br>");
+  	}
+    </script>
+</body>
+</html>
+  

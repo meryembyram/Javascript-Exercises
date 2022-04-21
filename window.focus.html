@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<script type="text/javascript">
+		function open_page(){
+			yeni_pencere = window.open("","_blank","width=300px,height=100px");
+			yeni_pencere = document.write("açılan pencere");
+		}
+		function focus_page(){
+			yeni_pencere.focus();
+			document.getElementById("yaz").innerHTML="focus() methodu";
+		}
+		function blur_page(){
+			yeni_pencere.blur()
+			document.getElementById("yaz").innerHTML="blur() methodu";
+		}
+	</script>
+	<div id="yaz" style="background-color:#CCC; color:red; font-size:16px; visibility: visible;"></div>
+	<a href="javascript:;" onclick="open_page()">Pencereyi Aç</a>
+	<br>
+	<a href="javascript:;" onclick="focus_page()">Açılan pencereye odaklan</a>
+	<br>
+	<a href="javascript;" onclick="blur_page()">Açılan pencere için odaklanmaya sonver.</a>
+</body>
+</html>

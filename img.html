@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+	<style type="text/css">
+	body{
+		padding:100px;
+	}
+	#resim{
+		width:500px;
+		height:130px;
+		margin:0 auto;
+	}
+	#orta{
+		float: left;
+		width:200px;		
+	}
+	#sol{
+		cursor: pointer;
+			float: left;	
+		width:150px;
+	}
+		#sag{
+			cursor: pointer;
+			float:right;	
+		width:150px;
+	}
+	</style>
+</head>
+<body>
+	<div id="resim">
+	<div id="sol" onclick="azal()">
+	<img src="file_format_png_delete.png"></div>
+		<div id="orta">
+		<img src="file_png.png">
+		</div><div id="sag" onclick="art()">
+		<img src="file_format_png_add.png" ></div>
+	</div>
+	<script type="text/javascript">
+		var dizi= Array("file_png.png","png2.png","png1.png","power_png_v2.png","sleep_png.png","png.png");
+		var t = 1;
+		function art(){
+			var z = document.getElementById("orta");
+			z.innerHTML="<img src='"+ dizi[t]+"'>";
+			t = t + 1;
+			if(t==dizi.length)
+			t=0;
+		}
+		function azal(){
+			var z = document.getElementById("orta");
+			z.innerHTML="<img src='"+ dizi[t]+"'>";
+			if(t>0)
+			t = t - 1;
+			else
+			t=5;
+		}
+	</script>
+</body>
+</html>

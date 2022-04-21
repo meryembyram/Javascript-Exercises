@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <title>Javascript</title>
+  <meta charset="utf-8">
+  <link rel ="shortcut icon" href="js.png">
+  <script type="text/javascript">
+	function colorDiv() {
+		var selection = document.getElementById('bgcolor').value;
+		var div = document.getElementById('change');
+		div.style.backgroundColor = 'green';
+		document.getElementById("demo").innerHTML = selection;
+		switch (selection) {
+			case "1":
+				div.style.backgroundColor = 'red';
+			break;
+			case "2":
+				div.style.backgroundColor = 'blue';
+			break;
+			case "3":
+				div.style.backgroundColor = 'green';
+			break;
+			case "4":
+				div.style.backgroundColor = 'purple';
+			break;
+			case "5":
+				div.style.backgroundColor = 'yellow';
+			break;
+		}
+	}
+  </script>
+</head>
+<body>
+    <div id="change" style="height:20px; width:100%; position: absolute; float:bottom;"></div>
+    <br>
+    <select name="bgcolor" id="bgcolor" onchange="colorDiv()">
+    	<option class="0" value=1>Renk Seç..</option>
+        <option class="1" value=1>Kırmızı</option>
+        <option class="2" value=2>Mavi</option>
+        <option class="3" value=3>Yeşil</option>
+        <option class="4" value=4>Mor</option>
+        <option class="5" value=5>Sarı</option>
+    </select>
+    <br>
+    <br>
+    <p id="demo"></p>
+</body>
+</html>

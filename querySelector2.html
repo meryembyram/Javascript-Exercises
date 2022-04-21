@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+	<script type="text/javascript">
+		var init = function (){
+			var div = document.querySelector('div');
+			console.log(div.id); // sonuc: 1
+			var span = document.querySelector('div>span');
+			console.log(span); // sonuc:null
+		}  
+	</script>
+</head>
+<body onload="init ();">
+	<div id="1"></div>
+	<div id="2"></div>
+	<div id="3"></div>
+	<div id="4"></div>
+</body>
+</html>

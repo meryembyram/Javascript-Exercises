@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+</head>
+<body>
+	<script type="text/javascript">
+		var str = "javascript javascript";
+		document.write(indexOf(str,"ipt",10));
+		function indexOf(metin, aranan, konum){
+			var sonKonum=metin.length-aranan.length;
+			if(konum>sonKonum){
+				return -1;
+			}
+			var ilkKonum=(konum==undefined)?0:konum;
+			var geciciMetin;		
+			for(var i=ilkKonum; i<=sonKonum; i++){
+				geciciMetin="";
+				for(var j=i; j<(i+aranan.length);j++){
+					geciciMetin += metin[j];
+				}
+				if(aranan==geciciMetin){
+					return i;
+				}
+			}
+			return -1;
+		}
+	</script>
+</body>
+</html>

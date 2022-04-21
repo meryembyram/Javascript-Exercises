@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<link rel ="shortcut icon" href="js.png">
+	<style type="text/css">
+		#yaz{
+			border-style: solid;
+			width: 100px;
+			height: 100px;
+			font-size: 70px;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		var i_zaman=0;
+		var time;
+		function say(){
+			document.getElementById("yaz").textContent = i_zaman;
+			i_zaman++;
+		}
+		function basla() {
+			time=window.setInterval("say()",1000);
+			document.getElementById("btnStart").disabled=true;
+			document.getElementById("btnStart").value="Devam et>>";
+			document.getElementById("btnStop").disabled=false;
+		}
+		function dur(){
+			document.getElementById("btnStart").disabled=false;
+			document.getElementById("btnStop").disabled=true;
+			window.clearInterval(time);
+		}
+		function gl() {
+			document.getElementById("btnStart").disabled=false;
+			document.getElementById("btnStop").disabled=false;
+		}
+	</script>
+</head>
+<body onload="gl();">
+	<div id="yaz"></div><br />
+	<input id="btnStart" type="button" value="Başla >>" onclick="basla();" />
+	<input id="btnStop" type="button" value="Durdur >>" onclick="dur();" />
+</body>
+</html>

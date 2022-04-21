@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">	
+</head>
+<body>
+	<button onclick="myFunction()"> Girilen Dizileri Sil </button>
+	<button onclick="mySil()"> Silinen Degeri Gor </button>
+	<p id="demo"></p>
+	<script>
+		var dizi = ["a", "b", "c", "1", "2", "3"];
+		document.getElementById("demo").innerHTML = dizi;
+		function myFunction() {
+			dizi.shift();
+			document.getElementById("demo").innerHTML = dizi;
+		}
+		function mySil() {
+			var silinen=dizi.shift();
+			document.getElementById("demo").innerHTML = dizi;
+			document.getElementById("demo").innerHTML ="Silinen deger :" + silinen;
+		}
+	</script>
+</body>
+</html>

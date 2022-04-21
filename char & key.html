@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+  <meta charset="utf-8">
+  <link rel ="shortcut icon" href="js.png">
+  <style type="text/css">
+    div{
+      width: 200px;
+      height: 30px;
+      padding: 10px;
+      border: 1px gray solid;
+      background: #eeeaea;
+    }
+  </style>
+</head>
+<body>
+  <script type="text/javascript">
+    function keyboard(event){
+      document.getElementById("res1").innerHTML += event.keyCode +"-";
+      document.getElementById("res2").innerHTML += event.key +"-";
+    }
+  </script>
+  <input type="text" onkeydown="keyboard(event)"/><br/>
+  event.char:
+  <div id="res1"></div>
+  event.key:
+  <div id="res2"></div>
+  /*char çalışmıyor keycode ile sayı kullan!*/
+</body>
+</html>

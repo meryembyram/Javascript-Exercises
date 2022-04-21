@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	<link rel ="shortcut icon" href="js.png">
+	<script type="text/javascript">
+		function fun(){
+			document.body.addEventListener("click" , fun1 , true);
+			document.getElementById("ust").addEventListener("click" , fun2 , true);
+			document.getElementById("alt").addEventListener("click" , fun3 , true);
+		}
+		function fun1 (event){
+			document.write("<body> elemanı click olayı");
+			event.stopPropagation()
+		}
+		function fun2 (event){
+			document.write("<div id='ust'> elemanı click olayı");
+		}
+		function fun3 (){
+			document.write("<div id='alt'> elemanı click olayı");
+		}
+	</script>
+</head>
+<body onload="fun();">
+	<div id="ust">
+		<div id="alt" style="background-color:#beefa9">TIKLA!</div>
+	</div>
+</body>
+</html>
